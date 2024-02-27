@@ -150,8 +150,8 @@ def histogram_subplots(df_1, df_2, yField, topN, plot_title1=None, plot_title2=N
 
     
 # ======= Load the parameters Data of EA & LA pipelines  =======================
-
-filePath = "ExpData/LA/GMC-Control/_ExpData_LA_GMC_Control.csv"
+dirPath = "Data/HMGULA/"
+filePath = "{dirPath}_ExpData_LA_GMC_Control.csv"
 ExpData = pd.read_csv(filePath, sep=',')
 
 # count_and_histogram for 'parameter_name':

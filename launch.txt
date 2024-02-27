@@ -1,0 +1,113 @@
+cd C:/Users/ikhud/OneDrive/Documents/CBC
+cd C:/Users/Iyad/Documents/HMGULA
+
+
+
+git add .
+git commit -m "Update"
+git push origin main
+
+git push -u origin main
+====================================
+git pull origin main
+
+====================================
+git rm -r --cached .
+
+ssh khuderi@tesla.img.local -p 2816
+cd PRIMUS/data/83_BIOINFORMATICS/Iyad/CBC_procedure_analysis
+
+https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=phenotyping_center:HMGU
+https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=biological_sample_group:control
+
+download only GMC-control-LA
+
+
+====================================
+https://api.mousephenotype.org/impress/procedure/belongingtopipeline/full/1
+
+https://api.mousephenotype.org/impress/pipeline/list/full
+
+https://api.mousephenotype.org/impress/pipeline/bykey/IMPC_001
+
+https://api.mousephenotype.org/impress/parameter/relatedtopipeline/2
+
+https://api.mousephenotype.org/impress/parameter/relatedtopipeline/2
+
+https://api.mousephenotype.org/impress/procedure/belongingtopipeline/full/1
+
+git remote add origin https://github.com/IyadKhuder/CBC.git
+git remote add origin https://github.com/myUserName/CBC.git
+git branch -M main
+
+====================================
+cd C:/Users/ikhud/OneDrive/Documents/BioInfo/CBC_procedure_analysis
+
+git remote remove origin
+"delete the .git folder"
+git remote -v
+
+
+f you want to discard your local changes and overwrite them with the changes from the remote repository, you have a few options:
+
+Discard Local Changes:
+You can use the git checkout command to discard changes in specific files. For example, to discard changes in a file named example.txt, you would run:
+
+bash
+-----------------
+git checkout -- example.txt
+Replace example.txt with the name of the file you want to discard changes for. You can repeat this command for each file listed in the error message.
+
+Stash Local Changes:
+If you want to keep your local changes for later use but still want to pull changes from the remote repository, you can stash them. Stashing temporarily shelves changes so you can reapply them later. Run:
+
+bash
+-----------------
+git stash
+This command stashes your local changes. After stashing, you can pull changes from the remote repository using git pull origin main. Once you've pulled the changes, you can reapply your stashed changes using:
+
+bash
+-----------------
+git stash apply
+Force Overwrite Local Changes:
+If you're sure you want to discard your local changes and forcefully overwrite them with the changes from the remote repository, you can use the --force flag with the git reset command. However, be cautious with this approach as it permanently deletes your local changes. Run:
+
+bash
+-----------------
+git reset --hard origin/main
+This command resets your current branch (main) to match the origin/main branch, effectively discarding all local changes. Use it with caution as it's not reversible.
+
+Choose the option that best fits your requirements. If you're unsure or want to preserve your local changes, it's safer to stash them before pulling changes from the remote repository.
+
+
+
+
+Set up a github repo based on an exising local repo
+1) cd path
+2) git init
+3) git remote add origin your_github_repo_url.git
+
+Run the following command to display the remote URLs configured for your repository:
+git remote -v
+
+Issue: Conflict between the name of branches on the remote repo on GitHub and my local repo:
+On my local repo, the name of my branch is "master", while on the remote repo, it's named "main".
+
+ it's a good idea to rename your local branch to match the name of the remote branch if you want to align them. Renaming your local branch from "master" to "main" will make it consistent with the naming convention used in many repositories, especially on platforms like GitHub, where "main" is commonly used as the default branch name.
+
+Here's how you can rename your local branch from "master" to "main":
+
+1. Checkout Your Local Branch:
+First, ensure that you are currently on the branch you want to rename. If you're not already on the "master" branch, switch to it using the git checkout command:
+
+2. Rename the Branch:
+git branch -m main
+
+
+Update the existing remote origin:
+git remote set-url origin https://github.com/myUserName/CBC.git
+
+Remove the existing remote origin and then add the new one:
+git remote remove origin
+git remote add origin https://github.com/myUserName/CBC.git
+

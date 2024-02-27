@@ -1,0 +1,17 @@
+Notes:
+
+We filtered the keys based on the following criteria:
+1) The field 'pipelineKey' is one of the following two:
+	- HMGULA_001
+	- HMGULA_002
+2) The field 'type' is one of the following three:
+	- simpleParameter
+	- ontologyParameter
+	- seriesParameter
+
+https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=parameter_stable_id:HMGULA_IPG_002_001
+
+
+gross pathology term
+
+IPGTT

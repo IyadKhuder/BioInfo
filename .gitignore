@@ -1,0 +1,15 @@
+.spyproject
+.idea
+archive/
+CBC_NB/
+cbcenv/
+Data/
+Docs/
+pythonProject/
+draft.py
+test/
+StatData/
+Vendula_materials/
+ExpData/
+ExpData1/
+ExpData2/
