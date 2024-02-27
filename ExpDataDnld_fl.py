@@ -11,6 +11,7 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+dirPath = "Data/HMGULA2/"
 
 # =============================================================================
 # Defining some constants

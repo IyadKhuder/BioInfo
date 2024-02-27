@@ -5,8 +5,8 @@ import pandas as pd
 dtype_specification = {1: str, 2: str, 3: str, 4: str, 5: str, 6: str, 7: str, 8: str, 9: str, 10: str, 11: str, 12: str, 13: str, 14: str, 15: str, 16: str}
 # =============================================================================
 # Define the number of DataFrames
-n = 48
-PrimusPath = "ExpData/LA/GMC-Control"
+n = 12
+dirPath = "Data/HMGULA2/"
 
 # Initialize an empty list to store DataFrames
 ExpData_LA_GMC_Control_DF = []
@@ -14,11 +14,11 @@ ExpData_LA_GMC_Control = []
 
 
 for sn in range(n):
-    filePath = f"{PrimusPath}/ExpData_LA_{sn+1}.csv"
+    filePath = f"{dirPath}/HMGULA_{sn+1}.csv"
     if os.path.exists(filePath):
         ExpData_Batch = pd.read_csv(filePath, sep=',', dtype = dtype_specification)
         ExpData_LA_GMC_Control.append(ExpData_Batch)
 
-ExpData_LA_GMC_Control_DF = pd.concat(ExpData_LA_GMC_Control, ignore_index=True)
+HMGULA_Control_DF2 = pd.concat(ExpData_LA_GMC_Control, ignore_index=True)
 
-ExpData_LA_GMC_Control_DF.to_csv(f"{PrimusPath}/_ExpData_LA_GMC_Control.csv", index=False)
+# HMGULA_Control_DF.to_csv(f"{dirPath}/_ExpData_HMGULA_Control.csv", index=False)

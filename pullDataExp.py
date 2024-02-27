@@ -7,11 +7,11 @@ from iyad_pck.list_utils import import_csv_as_list, save_list_to_csv
 # Mute all warning messages
 warnings.filterwarnings("ignore")
 
-dirPath = "Data/HMGULA/"
+dirPath = "Data/HMGULA2/"
 EBI_Domain = "https://www.ebi.ac.uk/mi/impc/solr/"
 param_query_exp = "experiment/select?q=parameter_stable_id:"
 
-HMGULA_keys = import_csv_as_list(f"{dirPath}/HMGULA_keys_list.csv")
+HMGULA_keys = import_csv_as_list(f"{dirPath}HMGULA_keys_list.csv")
 
 # save_list_to_csv(HMGULA_keys, f"{dirPath}/HMGULA_keys_list.csv")
     
@@ -21,19 +21,18 @@ filter_q += ",observation_type,data_point,strain_name,genetic_background,date_of
 filter_q += ",specimen_id,observation_type,discrete_point,sub_term_name,sub_term_id"
 
 recordCounter = 0
-batch = 2000
+batch = 5000
 paramsDataExp_LA = {}
-fileSize = 10000
+fileSize = 20000
 fileSN = 1
-maxPages = 1000000
 paramsData_list_of_dicts = []
 keysn = 0
 for param_key in HMGULA_keys:
     page = 1
     keysn += 1
-    print("- - - - - - - - - -")
-    print(f"Param #{keysn}:")
-    print(f"= = = = = {param_key} = = = = = ")
+    print("- - - - - - - - - -- - - - - - - - - -")
+    print(f"                Param #{keysn}:")
+    print(f"= = = = = = {param_key} = = = = = = ")
     potentialData = True
     # While loop to iterate through pages
     while potentialData:
@@ -85,11 +84,6 @@ for param_key in HMGULA_keys:
 
 
                 page += 1
-                # I set the maxPages constant just to prevent downloading a too-large load of data for one parameter
-                if page > maxPages:
-                    potentialData = False
-                    print(f"The data load for the parameter {param_key} exceeded the limit, with {page} pages")
-
 
             else:
                 potentialData = False
