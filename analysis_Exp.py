@@ -33,7 +33,7 @@ def generate_random_colors(num_colors):
     return ['#%06X' % np.random.randint(0x111111, 0xEEEEEE) for _ in range(num_colors)]
 
 
-def count_and_histogram(df_name, yField, topN, plot_title=None, y_tick_interval=None, show_grid=False, y_label='Count'):
+def count_and_histogram(df_name, yField, topN, plot_title=None, y_tick_interval=None, show_grid=False, y_label='Count', show_count_on_bars=False):
     # Count the occurrences of each unique value of 'yField'
     parameter_counts = df_name[yField].value_counts()
     
@@ -79,6 +79,13 @@ def count_and_histogram(df_name, yField, topN, plot_title=None, y_tick_interval=
     else:
         plt.ylabel('Count')
 
+
+    bars = plt.bar(countByField.index, countByField.values, color=colors)
+
+    if show_count_on_bars:
+        for bar in bars:
+            height = bar.get_height()
+            plt.text(bar.get_x() + bar.get_width() / 2, height, f'{int(height)}', ha='center', va='bottom')
 
     plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readability
     plt.tight_layout()  # Adjust layout to prevent clipping of labels
@@ -150,15 +157,15 @@ def histogram_subplots(df_1, df_2, yField, topN, plot_title1=None, plot_title2=N
 
     
 # ======= Load the parameters Data of EA & LA pipelines  =======================
-dirPath = "Data/HMGULA/"
-filePath = "{dirPath}_ExpData_LA_GMC_Control.csv"
+dirPath = "Data/HMGULA3/"
+filePath = f"{dirPath}_HMGULA_Control_ExpData.csv"
 ExpData = pd.read_csv(filePath, sep=',')
 
 # count_and_histogram for 'parameter_name':
 topN = 2
 plot_title1 = "Comparison between the number of males and females in the experimental data for LA pipelines, at GMC phenotype center, for the control samples"
 y_label1 = "Count of females/males"
-count_and_histogram(ExpData, 'sex', topN, plot_title1, None, True, y_label1)
+count_and_histogram(ExpData, 'sex', topN, plot_title1, None, True, y_label1, True)
 
 # =============================================================================
 # In[13]:
