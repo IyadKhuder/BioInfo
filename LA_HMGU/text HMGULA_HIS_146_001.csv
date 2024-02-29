@@ -1,0 +1,2 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","c33d110963c1154042c69372418706e3",442,"male","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Epididymis - Free text diagnostic term","HMGULA_HIS_146_001","focal inflammatory infiltrates, oligospermia"

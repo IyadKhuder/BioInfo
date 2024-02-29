@@ -1,0 +1,6 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","9df6ef31b31a6355bb93a9226de3169d",493,"female","GMC late adult (70 weeks)","HMGULA_002","SHIRPA","HMGULA_SHI_001","HMGULA_SHI","SHIRPA comment","HMGULA_SHI_018_001","Tired after grip testing"
+"2","8756cf85e13ead88da6238989b2a1139",493,"male","GMC late adult (70 weeks)","HMGULA_002","SHIRPA","HMGULA_SHI_001","HMGULA_SHI","SHIRPA comment","HMGULA_SHI_018_001","tweeting vocalisation"
+"3","be2ec381fdf6c763bc92b1ae94c90e2e",489,"male","GMC late adult (70 weeks)","HMGULA_002","SHIRPA","HMGULA_SHI_001","HMGULA_SHI","SHIRPA comment","HMGULA_SHI_018_001","Straub Tail"
+"4","9a2ecaa88eae0b7ef140c1aa1d9e4976",492,"female","GMC late adult (70 weeks)","HMGULA_002","SHIRPA","HMGULA_SHI_001","HMGULA_SHI","SHIRPA comment","HMGULA_SHI_018_001","Straub Tail"
+"5","8afd0ab2a13a9fae68199d7c5286ce95",492,"female","GMC late adult (70 weeks)","HMGULA_002","SHIRPA","HMGULA_SHI_001","HMGULA_SHI","SHIRPA comment","HMGULA_SHI_018_001","undulating tail"

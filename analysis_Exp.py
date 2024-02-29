@@ -157,9 +157,45 @@ def histogram_subplots(df_1, df_2, yField, topN, plot_title1=None, plot_title2=N
 
     
 # ======= Load the parameters Data of EA & LA pipelines  =======================
-dirPath = "Data/HMGULA3/"
-filePath = f"{dirPath}_HMGULA_Control_ExpData.csv"
+dirPath = "Data/HMGULA4/"
+filePath = f"{dirPath}_HMGULA_Cntrl_Exp4.csv"
 ExpData = pd.read_csv(filePath, sep=',')
+
+# ======= Group by parameters and count  =======================
+
+paramCounts = ExpData['parameter_stable_id'].value_counts()
+
+countByParam = paramCounts.sort_values(ascending=False)
+
+countByParam_df = countByParam.to_frame().reset_index()
+
+# Rename the columns
+countByParam_df.columns = ['paramKey', 'count']
+
+# ==============================
+
+
+# Check for duplicates based on the combination of all columns
+duplicate_rows = ExpData[ExpData.duplicated(keep=False)]
+
+# Print the duplicate rows, if any
+if not duplicate_rows.empty:
+    print("Duplicate rows based on the combination of all columns:")
+    print(duplicate_rows)
+else:
+    print("No duplicate rows based on the combination of all columns.")
+
+# ==============================
+fields_list = ExpData.columns.tolist()
+
+columns = [
+    'parameter_stable_id', 'parameter_name', 'phenotyping_center', 'biological_sample_group', 'zygosity',
+    'sex', 'pipeline_name', 'pipeline_stable_id', 'procedure_name', 'procedure_stable_id',
+    'specimen_id', 'strain_name', 'genetic_background', 'data_point', 'date_of_experiment',
+    'observation_type', 'category', 'discrete_point', 'sub_term_name', 'sub_term_id',
+]
+
+ExpData_uniq = ExpData.drop_duplicates(columns)
 
 # count_and_histogram for 'parameter_name':
 topN = 2

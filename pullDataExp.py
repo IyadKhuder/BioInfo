@@ -24,6 +24,7 @@ batch = 500
 fileSize = 10000
 fileSN = 1
 paramsData_list_of_dicts = []
+url_list = []
 
 for keysn, param_key in enumerate(HMGULA_keys, start=1):
     page = 1

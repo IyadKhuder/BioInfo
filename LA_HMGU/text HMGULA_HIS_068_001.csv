@@ -1,0 +1,2 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","679d54defa1baadd27c6717b469a3394",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Stomach - Free text diagnostic term","HMGULA_HIS_068_001","focal hyperplasia of the squamous epithelium of the forestomach"

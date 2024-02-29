@@ -1,0 +1,7 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","category"
+"1","4b8cf9eaf1f7d8b3666cdb495aa8c07f",444,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"
+"2","c33d110963c1154042c69372418706e3",442,"male","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"
+"3","ffb30f8568963e9197128c37011a894d",442,"male","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"
+"4","679d54defa1baadd27c6717b469a3394",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"
+"5","f9ad9327a4d154239961d4e834794768",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"
+"6","d637ba26ed77902014a7cc7dd9480c46",441,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Urinary bladder - Significance score","HMGULA_HIS_201_001","0"

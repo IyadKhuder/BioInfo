@@ -1,0 +1,4 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","afda009b31dde550c5d22f8098cd80e9",382,"female","GMC late adult (53 weeks)","HMGULA_001","Rotarod","HMGULA_ROT_001","HMGULA_ROT","Comment","HMGULA_ROT_005_001","1. Lauf rueckwaerts"
+"2","051b190ba77c68bff3fcf881df1e4207",382,"female","GMC late adult (53 weeks)","HMGULA_001","Rotarod","HMGULA_ROT_001","HMGULA_ROT","Comment","HMGULA_ROT_005_001","3.Lauf rueckwaerts"
+"3","5176c52be4f115440dc0dbaaae4e8b4f",377,"female","GMC late adult (53 weeks)","HMGULA_001","Rotarod","HMGULA_ROT_001","HMGULA_ROT","Comment","HMGULA_ROT_005_001","jetzt K"

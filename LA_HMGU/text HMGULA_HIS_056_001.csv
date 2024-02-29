@@ -1,0 +1,4 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","679d54defa1baadd27c6717b469a3394",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Liver - Free text diagnostic term","HMGULA_HIS_056_001","multifocal hepatic microgranuloma"
+"2","679d54defa1baadd27c6717b469a3394",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Liver - Free text diagnostic term","HMGULA_HIS_056_001","eosinophilic focus"
+"3","4b8cf9eaf1f7d8b3666cdb495aa8c07f",444,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Liver - Free text diagnostic term","HMGULA_HIS_056_001","focal acidofilic focus"

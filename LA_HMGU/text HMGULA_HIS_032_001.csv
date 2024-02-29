@@ -1,0 +1,4 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","f9ad9327a4d154239961d4e834794768",443,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Heart - Free text diagnostic term","HMGULA_HIS_032_001","dilated right atrium"
+"2","ffb30f8568963e9197128c37011a894d",442,"male","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Heart - Free text diagnostic term","HMGULA_HIS_032_001","focal fibrotic tissue"
+"3","d637ba26ed77902014a7cc7dd9480c46",441,"female","GMC late adult (53 weeks)","HMGULA_001","Histopathology","HMGULA_HIS_001","HMGULA_HIS","Heart - Free text diagnostic term","HMGULA_HIS_032_001","dilated right atrium"

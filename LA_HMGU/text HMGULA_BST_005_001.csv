@@ -1,0 +1,3 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","13043f1734ebf4e457fe637ad27e1431",393,"male","GMC late adult (53 weeks)","HMGULA_001","Body Surface Temperature","HMGULA_BST_001","HMGULA_BST","Comment BST","HMGULA_BST_005_001","Foto unscharf"
+"2","3c9c790e431416a44e429fb3589a336c",393,"male","GMC late adult (53 weeks)","HMGULA_001","Body Surface Temperature","HMGULA_BST_001","HMGULA_BST","Comment BST","HMGULA_BST_005_001","Foto unscharf"

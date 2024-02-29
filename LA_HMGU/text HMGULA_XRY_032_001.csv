@@ -1,0 +1,4 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","cd8c31c56b143559ae109043f5598920",427,"male","GMC late adult (53 weeks)","HMGULA_001","X-ray","HMGULA_XRY_001","HMGULA_XRY","Comment on XRay image","HMGULA_XRY_032_001","Femur rechts deformiert"
+"2","9059253be6198e13bce89a1e59292160",424,"male","GMC late adult (53 weeks)","HMGULA_001","X-ray","HMGULA_XRY_001","HMGULA_XRY","Comment on XRay image","HMGULA_XRY_032_001","Verkuerzter Femur rchts"
+"3","c8dfc298afda5f57a33ac8905fb52f2a",422,"male","GMC late adult (53 weeks)","HMGULA_001","X-ray","HMGULA_XRY_001","HMGULA_XRY","Comment on XRay image","HMGULA_XRY_032_001","Femur links deformiert"

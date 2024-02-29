@@ -1,0 +1,2 @@
+"","specimen_id","age_in_days","sex","pipeline_name","pipeline_stable_id","procedure_name","procedure_stable_id","procedure_group","parameter_name","parameter_stable_id","text_value"
+"1","b524c23bacd2ef205be266a64efd70ae",539,"male","GMC late adult (70 weeks)","HMGULA_002","Scheimpflug","HMGULA_SCH_001","HMGULA_SCH","Scheimpflug description","HMGULA_SCH_002_001","some degree of lens matix with deposits at the anterior lens"
